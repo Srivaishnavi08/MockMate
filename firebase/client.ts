@@ -12,5 +12,5 @@ const firebaseConfig = {
 };
 console.log("Firebase Config:",  process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
 const app = !getApps.length ? initializeApp(firebaseConfig): getApp();
-
+console.log("app:",app);
 export const auth =getAuth(app);
